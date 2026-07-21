@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stridr — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         background: #060607; color: #F4F1EA; line-height: 1.65; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1 { font-size: 2rem; letter-spacing: -0.5px; }
+  h2 { margin-top: 2.2em; font-size: 1.25rem; letter-spacing: -0.3px; }
+  a { color: #FF5F1F; }
+  .meta { color: #9A9A9C; }
+  strong { color: #fff; }
+  @media (prefers-color-scheme: light) {
+    body { background: #fff; color: #1a1a1a; }
+    strong { color: #000; }
+    .meta { color: #666; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Stridr Privacy Policy</h1>
+<p class="meta">Effective date: July 5, 2026</p>
+
+<p>Stridr ("we", "the app") is a personal motivation app. This policy explains exactly what data Stridr touches, where it goes, and what never leaves your phone. The short version: <strong>we store the minimum needed to motivate you, we sell nothing, we show no ads, and your health data is never stored on our servers.</strong></p>
+
+<h2>What we collect and why</h2>
+<p><strong>Account.</strong> Your email address and a password (stored as a secure hash), used only to sign you in and sync your profile across devices.</p>
+<p><strong>Your profile.</strong> The answers you give during onboarding and in Settings — your goals, who you're doing it for, your preferred voice and intensity, reminders, and personal targets (steps, sleep, workouts, nutrition). This is the raw material your motivation is written from. Stored in our database (Supabase), protected by row-level security so only your account can read it.</p>
+<p><strong>Generated content.</strong> The motivational lines written for you are saved to your feed so you can revisit and favorite them.</p>
+
+<h2>On-device signals (optional, off by default)</h2>
+<p>Each of these is opt-in via a toggle in Settings and can be turned off at any time:</p>
+<p><strong>Health (Apple Health).</strong> With your permission, Stridr reads steps, sleep, workouts, exercise minutes, and nutrition you've logged (including from apps like MyFitnessPal that sync to Apple Health). This data is read <strong>on your device</strong>. Small same-day summaries (e.g., "4,100 of 10,000 steps") are included <strong>transiently</strong> in requests to our motivation-writing service so your lines reflect your actual day. <strong>Health data is never stored on our servers, never used for advertising, and never shared for any purpose other than writing your motivation.</strong></p>
+<p><strong>Calendar.</strong> With your permission, Stridr reads upcoming events on your device to time encouragement before moments that matter. Event titles (and, when present, brief notes/location) for the next 48 hours are sent <strong>transiently</strong> for classification and line-writing. They are not stored on our servers.</p>
+<p><strong>Location &amp; weather.</strong> With your permission, your approximate coordinates are sent <strong>only</strong> to Open-Meteo (a weather service) to fetch current conditions. We do not store your location.</p>
+<p><strong>Notification engagement.</strong> Which notifications you tap, and when, is recorded <strong>only on your device</strong> to time future notifications better. It is never uploaded.</p>
+
+<h2>AI processing</h2>
+<p>Your motivational lines are written by Claude, an AI model from Anthropic. To write them, our server sends Anthropic the relevant slice of your profile and the transient context described above. Anthropic's API terms do not permit using this data to train their models. Our server is stateless: it forwards the request and returns your lines without logging their content.</p>
+
+<h2>What we don't do</h2>
+<p>No advertising, and no advertising SDKs. No selling or sharing of personal data with data brokers. No third-party analytics or tracking. No use of health data for anything except writing your motivation.</p>
+
+<h2>Data retention and deletion</h2>
+<p>Your profile and feed persist while your account exists. You can delete your account at any time in <strong>Settings → Delete account</strong>, which permanently removes your profile, your feed, and your login from our servers. Signing out on a device removes locally cached data from that device.</p>
+
+<h2>Children</h2>
+<p>Stridr is not intended for children under 13, and the optional explicit-language mode is intended for adult users who enable it themselves.</p>
+
+<h2>Not medical advice</h2>
+<p>Stridr reads fitness signals to write encouragement. It is not a medical device and provides no medical, nutritional, or mental-health advice.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes materially, we'll update this page and the effective date above.</p>
+
+<h2>SMS / text messages (Backup feature)</h2>
+<p>If a Stridr user designates you as their backup and you accept the role, Stridr may send you text messages related to that role. <strong>Mobile numbers are never shared with third parties or affiliates for marketing purposes.</strong> Message frequency: <strong>maximum one message per week per recipient</strong>. <strong>Message and data rates may apply.</strong> You can <strong>opt out at any time by replying STOP</strong>, or reply <strong>HELP</strong> for help. Consent to receive messages is established when you explicitly accept a backup invitation via web link; no messages are sent before acceptance.</p>
+
+<h2 id="contact">Contact &amp; support</h2>
+<p>Questions, support, or data requests: <a href="mailto:jakecsnyder@gmail.com">jakecsnyder@gmail.com</a></p>
+
+<h2>SMS messages (Backup program)</h2>
+<p>If a Stridr user adds you as their accountability <strong>Backup</strong>, Stridr sends you a single invitation text at that user's explicit request. Recurring messages begin only after you reply YES (double opt-in). Message frequency varies, typically fewer than 4 messages per month. Message and data rates may apply. Reply <strong>STOP</strong> at any time to opt out, or <strong>HELP</strong> for help.</p>
+<p><strong>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</strong> Information sharing to subprocessors that support our ability to send you messages (such as our SMS delivery provider) is limited to that purpose only. Phone numbers collected for the Backup program are used solely to deliver the messages described above and are deleted when you opt out or the Backup relationship is removed.</p>
+
+</main>
+</body>
+</html>
